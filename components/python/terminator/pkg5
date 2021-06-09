@@ -5,6 +5,7 @@
         "library/python/pygobject-3-35",
         "library/python/python-dbus-35",
         "runtime/python-35",
+        "shell/ksh93",
         "system/library"
     ],
     "fmris": [
