@@ -11,6 +11,7 @@
 #
 # Copyright (c) 2016 Sergey Avseyev
 # Copyright (c) 2020 Michal Nowak
+# Copyright (c) 2021 Nona Hansel
 #
 
 BUILD_BITS=		64
@@ -19,6 +20,7 @@ include ../../../make-rules/shared-macros.mk
 
 COMPONENT_NAME=		claws-mail
 COMPONENT_VERSION=	3.17.8
+COMPONENT_REVISION=	1
 COMPONENT_PROJECT_URL=	https://www.claws-mail.org
 COMPONENT_FMRI=		mail/claws-mail
 COMPONENT_SUMMARY=	The user-friendly, lightweight, and fast email client
@@ -51,7 +53,7 @@ CONFIGURE_ENV += CPPFLAGS="$(CPPFLAGS)"
 REQUIRED_PACKAGES += library/python/pygobject
 REQUIRED_PACKAGES += library/python/pygtk2
 REQUIRED_PACKAGES += library/libsoup
-REQUIRED_PACKAGES += runtime/python-27
+REQUIRED_PACKAGES += runtime/python-39
 # Auto-generated dependencies
 REQUIRED_PACKAGES += image/library/librsvg
 REQUIRED_PACKAGES += library/desktop/cairo
